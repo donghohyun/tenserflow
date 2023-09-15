@@ -5,7 +5,7 @@ from image import image_import
 
 
 @click.command()
-@click.option('-a', '--batch-one-all', type = click.STRING, default = 'all', help = '유사도를 전체를 출력할지 한개를 대상으로 비교할지 선정(one or all)')
+@click.option('-a', '--batch-one-all', type = click.STRING, default = 'one', help = '유사도를 전체를 출력할지 한개를 대상으로 비교할지 선정(one or all)')
 @click.option('-n', '--batch-name', type = click.STRING, default = 'abomasnow', help = '비교하고자 하는 캐릭터 이름을 입력하세요')
 @click.option('-f', '--file-name', type = click.STRING, default = '', help = '돌릴때 마다 모델을 돌릴시 시간이 오래걸리므로 학습한 데이터를 저장하기 위한 파일명임')
 def start_batch(batch_one_all,batch_name, file_name):
